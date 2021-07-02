@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>This is a Code Quiz</title>
-</head>
-<body>
-    <script src="assets/script.js"></script> 
-</body>
+  </head>
+  <body>
+    <section id="startpage" class="centered">
+      <h2>This quiz will test your knowledge on HTML/CSS/Javascript</h2>
+      <div><span id="timer">75</span> seconds</div>
+      <div id="buttons">
+        <input id="startQuiz" type="button" value="Start Quiz" />
+      </div>
+    </section>
+    <div id="quiz" class="centered hidden">
+      <div id="questions">
+        <p id="question-placeholder"><span>Questions Placeholder</span></p>
+        <button id="a" onclick="checkAnswer('a')">A</button>
+        <button id="b" onclick="checkAnswer('b')">B</button>
+        <button id="c" onclick="checkAnswer('c')">C</button>
+        <button id="d" onclick="checkAnswer('d')">D</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <div id="gameover" class="hidden">
+      <div id="finalScore"></div>
+      <input
+        type="text"
+        size="40"
+        placeholder="Enter you initials for high score"
+        name="intials"
+        id="initials"
+      />
+      <button id="submitScore">Submit Score</button>
+    </div>
+    <div id="highscoreContainer" class="hidden">
+      <div id="high-scorePage">
+        <div id="leader-board">
+        </div>
+      </div>
+      <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">
+          Clear Highscores
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
