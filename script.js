@@ -181,7 +181,7 @@ function generateHighScores(){
 function replayQuiz () {
     highscoreContainer.classList.add('hidden');
     gameoverDiv.classList.add('hidden');
-    startPage.classList.remove('hidden');
+    startHeader.classList.remove('hidden');
     startBtn.classList.remove('hidden');
     secondsLeft = 75;
     score = 0;
