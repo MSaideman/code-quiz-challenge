@@ -173,6 +173,8 @@ function generateHighScores(){
     var leaderBoard = document.getElementById('leader-board');
     for (i=0; i<highscores.length; i++) {
         var players = document.createElement("li");
+        players.style.listStyle = "none";
+        players.style.margin = "1em";
         players.textContent = `${highscores[i].name} ${highscores[i].score}`;
         leaderBoard.appendChild(players);
     }
