@@ -70,6 +70,38 @@ body {
   align-self: center;
 }
 
+#endGameBtns button {
+  font-family: Helvetica, sans-serif;
+  border-radius: 1em;
+  background-color: blue;
+  color: aquamarine;
+  border-style: solid;
+  margin: 10px;
+  padding: 0.5em;
+  font-size: 16px;
+}
+
+#submitScore {
+  background-color: blue;
+  color: aquamarine;
+  font-family: Helvetica, sans-serif;
+  border-radius: 1em;
+  margin: 10px;
+  padding: 0.5em;
+  font-size: 16px;
+}
+
+#leader-board {
+  font-family: Helvetica, sans-serif;
+}
+
+input {
+  font-family: Helvetica, sans-serif;
+  border-radius: 0.5em;
+  margin: 10px;
+  padding: 0.5em;
+  font-size: 16px;
+}
 .hidden {
   display: none;
 }

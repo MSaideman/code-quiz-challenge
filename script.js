@@ -123,6 +123,7 @@ function showScore() {
   highscoreInputName.value = "";
   finalScoreEl.innerHTML =
     "You got " + score + " out of " + quizQuestions.length + " correct!";
+    finalScoreEl.style.fontFamily = "Helvetica, sans-serif";
 }
 
 // This function checks the response to each answer
